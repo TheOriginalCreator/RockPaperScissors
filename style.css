@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+h1, p, h2, h3, h4{
+    font-family: 'Press Start 2P'
+}
+
+body {
+    background: linear-gradient(179deg, #d49af0, #beb8ec, #b8e9ec, #b8ecc3, #e4ecb8, #ecb8b8);
+    background-size: 1200% 1200%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 5%
+    }
+    50% {
+        background-position: 100% 96%
+    }
+    100% {
+        background-position: 0% 5%
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+.fa-desktop {
+    font-size: 100px;
+}
+
+.select:hover {
+    color: goldenrod;
+}
+
+.startGame {
+    visibility: visible;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(179deg, #d49af0, #beb8ec);
+    background-size: 1200% 1200%;
+    animation: backgroundAnimation 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    display: none;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.playerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    font-size: 50px;
+}
+
+.computerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    font-size: 50px;
+}
+
+.reset {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+.outcome {
+    font-size: 20px;
+}
+
+.choice {
+    border: 1px double transparent;
+    border-radius: 10px;
+}
+
+.fas {
+    color: black;
+    height: 50px;
+    width: 50px;
+}
+
+.results {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%
+}
+
+#lose {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#icon1 {
+    animation: myAnimation 5s infinite linear;
+}
+
+#icon2 {
+    animation: myAnimation 10s infinite linear;
+}
+
+#icon3 {
+    animation: myAnimation 15s infinite linear;
+}
+
+@keyframes myAnimation {
+    50% {
+        transform: rotateY(180deg)
+    }
+}
+
+.credit{
+    animation: creditAnimation 2s infinite linear;
+}
+
+@keyframes creditAnimation {
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

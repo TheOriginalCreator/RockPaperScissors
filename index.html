@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="startGame" id="startGame">
+        <h1>Rock Paper Scissors</h1>
+        <br>
+        <h2 class="select" id="select">Select Computer vs Player</h2>
+        <br>
+        <h4 class="credit">Credit: 0.20p</h4>
+
+        <h2>How To Win:</h2>
+        <h3>Rock Beats Scissors</h3>
+        <h3>Scissors Beats Paper</h3>
+        <h3>Paper Beats Rock</h3>
+
+        <div class="icons">
+                <i class="fas fa-hand-rock icon" id="icon1"></i>
+                <i class="fas fa-hand-scissors icon" id="icon2"></i>
+                <i class="fas fa-hand-paper icon" id="icon3"></i>
+        </div>
+
+    </div>
+
+    <div class="wrapper" id="wrapper">
+        <div class="info" id="player">
+            <h1>Player:</h1>
+            <p class="outcome" id="playerOutcome"></p>
+        </div>
+
+        <div class="playerContainer">
+            <div class="choice" id="playerRock">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+            <div class="choice" id="playerScissors">
+                <i class="fas fa-hand-scissors"></i>
+            </div>
+            <div class="choice" id="playerPaper">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+        </div>
+
+
+        <div class="reset" id="reset">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+
+        <div class="info" id="computer">
+            <h1>Computer:</h1>
+            <p class="outcome" id="computerOutcome"></p>
+        </div>
+
+        <div class="computerContainer">
+            <div class="choice" id="computerRock">
+                <i class="fas fa-hand-rock"></i>
+            </div>
+            <div class="choice" id="computerScissors">
+                <i class="fas fa-hand-scissors"></i>
+            </div>
+            <div class="choice" id="computerPaper">
+                <i class="fas fa-hand-paper"></i>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2 id="win">Win: 0</h2>
+            <h2 id="lose">Lose: 0</h2>
+            <h2 id="tie">Tie: 0</h2>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
